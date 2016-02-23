@@ -2,14 +2,15 @@ html {
   position: relative;
   min-height: 100%;
 }
-body { 
+/*body {
     line-height: 1.5;
     color: #555;
     font-family: "Lato",sans-serif;
     padding-top: 100px;
-    /* Margin bottom by footer height */
+    /* Margin bottom by footer height
     margin-bottom: 60px;
 }
+*/
 footer {
     position: absolute;
     bottom: 0;
@@ -64,7 +65,7 @@ footer {
     border-top: 2px solid #444
 }
 #slide{
-    height: 450px;
+    height: 500px;
 }
 
 .features {
@@ -134,6 +135,14 @@ footer {
 }
 /* Media Queries Minimum Width 768px */
 @media only screen and (min-width:768px){
+    body {
+    line-height: 1.5;
+    color: #555;
+    font-family: "Lato",sans-serif;
+    padding-top: 100px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
     .navbar-right {
         margin-right: 50px;
     }
@@ -403,4 +412,22 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #FFF;
     padding: 0px 40px;
+}
+@media only screen and (min-width:300px){
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #FFF;
+}
+.navbar-default {
+        background-color: #FFF;
+    border-color: #FFF;
+}
+ .navbar-header {
+        padding-top: 15px;
+        height: 70px;
+    }
+    body {
+    padding-top: 70px;
+}
 }
